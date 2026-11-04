@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="620" rx="8" fill="#F4F8FC"/>
+
+  <!-- ============ LAYER LABELS (left side) ============ -->
+  <text x="28" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#73726C" text-anchor="middle" transform="rotate(-90 28 105)">SENSE</text>
+  <text x="28" y="335" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#73726C" text-anchor="middle" transform="rotate(-90 28 335)">PLAN &amp; OPERATE</text>
+  <text x="28" y="540" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="500" fill="#73726C" text-anchor="middle" transform="rotate(-90 28 540)">QUALITY OF LIFE</text>
+
+  <!-- Layer background bands -->
+  <rect x="48" y="30" width="830" height="160" rx="10" fill="#1D9E75" opacity="0.06" stroke="#1D9E75" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="48" y="210" width="830" height="170" rx="10" fill="#D85A30" opacity="0.05" stroke="#D85A30" stroke-width="0.5" stroke-opacity="0.2"/>
+  <rect x="48" y="490" width="830" height="100" rx="10" fill="#73726C" opacity="0.05" stroke="#73726C" stroke-width="0.5" stroke-opacity="0.15"/>
+
+  <!-- ============ SENSE LAYER ============ -->
+
+  <!-- automation-engine -->
+  <rect x="68" y="50" width="250" height="70" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+  <text x="193" y="76" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#085041" text-anchor="middle">automation-engine</text>
+  <text x="193" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#0F6E56" text-anchor="middle">Rules engine, SignalK hub, alarms, dashboards</text>
+
+  <!-- wiring-io -->
+  <rect x="338" y="50" width="220" height="70" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+  <text x="448" y="76" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#085041" text-anchor="middle">wiring-io</text>
+  <text x="448" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#0F6E56" text-anchor="middle">Modbus I/O, relay pool, physical wiring</text>
+
+  <!-- alarm-panel -->
+  <rect x="578" y="50" width="280" height="70" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
+  <text x="718" y="76" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#085041" text-anchor="middle">alarm-panel</text>
+  <text x="718" y="96" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#0F6E56" text-anchor="middle">LED alarm panel PCB (EasyEDA / JLCPCB)</text>
+
+  <!-- Inter-repo arrows in Sense layer -->
+  <!-- automation-engine → wiring-io (reads I/O) -->
+  <line x1="318" y1="85" x2="336" y2="85" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="327" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#0F6E56" text-anchor="middle">reads I/O</text>
+
+  <!-- automation-engine → alarm-panel (drives) -->
+  <path d="M318 68 Q450 42 576 68" fill="none" stroke="#1D9E75" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="448" y="46" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#0F6E56" text-anchor="middle">drives</text>
+
+  <!-- ============ GUIDE (CENTER HUB) ============ -->
+  <rect x="300" y="145" width="300" height="55" rx="10" fill="#0B2545" stroke="#0B2545" stroke-width="1.5"/>
+  <text x="450" y="171" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">guide</text>
+  <text x="450" y="189" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#B5D4F4" text-anchor="middle">New Owner's Guide  &#8212;  start here</text>
+
+  <!-- Guide → Sense layer arrows -->
+  <line x1="370" y1="145" x2="250" y2="122" stroke="#0B2545" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)" opacity="0.4"/>
+  <line x1="450" y1="145" x2="448" y2="122" stroke="#0B2545" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)" opacity="0.4"/>
+  <line x1="530" y1="145" x2="660" y2="122" stroke="#0B2545" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)" opacity="0.4"/>
+
+  <!-- Guide → Plan & Operate arrows -->
+  <line x1="390" y1="200" x2="270" y2="240" stroke="#0B2545" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)" opacity="0.4"/>
+  <line x1="510" y1="200" x2="630" y2="240" stroke="#0B2545" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)" opacity="0.4"/>
+
+  <!-- Guide → Quality of Life arrow -->
+  <path d="M450 200 L450 415 L300 415 L300 520" fill="none" stroke="#0B2545" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)" opacity="0.35"/>
+
+  <!-- "references" label for guide arrows -->
+  <text x="810" y="175" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#73726C" font-style="italic">Dashed arrows = guide references</text>
+
+  <!-- ============ PLAN & OPERATE LAYER ============ -->
+
+  <!-- vessel-ops -->
+  <rect x="68" y="240" width="400" height="80" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
+  <text x="268" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#712B13" text-anchor="middle">vessel-ops</text>
+  <text x="268" y="292" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#993C1D" text-anchor="middle">Maintenance, inventory, food, ship's log, cockpit display</text>
+  <text x="268" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#993C1D" text-anchor="middle" opacity="0.7">FastAPI + React + SQLite</text>
+
+  <!-- passage-planner -->
+  <rect x="488" y="240" width="380" height="80" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="1"/>
+  <text x="678" y="272" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#712B13" text-anchor="middle">passage-planner</text>
+  <text x="678" y="292" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#993C1D" text-anchor="middle">Weather routing, briefings, float plans</text>
+  <text x="678" y="308" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#993C1D" text-anchor="middle" opacity="0.7">Python CLI + web dashboard</text>
+
+  <!-- Inter-repo arrows: Plan ↔ Sense -->
+  <!-- vessel-ops → automation-engine (reads status) -->
+  <line x1="200" y1="240" x2="200" y2="122" stroke="#73726C" stroke-width="1" marker-end="url(#arrow)" opacity="0.6"/>
+  <text x="210" y="182" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#73726C">reads status</text>
+
+  <!-- passage-planner → vessel-ops (shares log data) -->
+  <line x1="486" y1="280" x2="470" y2="280" stroke="#73726C" stroke-width="1" marker-end="url(#arrow)" opacity="0.6"/>
+  <text x="478" y="273" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#73726C" text-anchor="middle">log data</text>
+
+  <!-- ============ DATA FLOW OVERVIEW ============ -->
+
+  <!-- Vertical flow: Sense → Plan/Operate  -->
+  <rect x="68" y="345" width="800" height="130" rx="10" fill="none" stroke="#73726C" stroke-width="0.5" stroke-dasharray="6 4" opacity="0.3"/>
+  <text x="468" y="368" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#2C2C2A" text-anchor="middle">Typical data flow</text>
+
+  <!-- Flow boxes -->
+  <rect x="88" y="385" width="120" height="40" rx="6" fill="#FFFFFF" stroke="#73726C" stroke-width="0.5"/>
+  <text x="148" y="409" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#2C2C2A" text-anchor="middle">Physical sensors</text>
+
+  <line x1="210" y1="405" x2="238" y2="405" stroke="#73726C" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="240" y="385" width="100" height="40" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+  <text x="290" y="409" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#085041" text-anchor="middle">wiring-io</text>
+
+  <line x1="342" y1="405" x2="370" y2="405" stroke="#73726C" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="372" y="385" width="150" height="40" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+  <text x="447" y="409" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#085041" text-anchor="middle">automation-engine</text>
+
+  <line x1="524" y1="405" x2="552" y2="405" stroke="#73726C" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="554" y="385" width="100" height="40" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+  <text x="604" y="409" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#712B13" text-anchor="middle">vessel-ops</text>
+
+  <line x1="656" y1="405" x2="684" y2="405" stroke="#73726C" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <rect x="686" y="385" width="160" height="40" rx="6" fill="#FFFFFF" stroke="#73726C" stroke-width="0.5"/>
+  <text x="766" y="402" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#2C2C2A" text-anchor="middle">Dashboards, alerts,</text>
+  <text x="766" y="418" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#2C2C2A" text-anchor="middle">notifications</text>
+
+  <!-- Branch off automation-engine to alarm-panel -->
+  <line x1="447" y1="425" x2="447" y2="445" stroke="#73726C" stroke-width="0.8"/>
+  <line x1="447" y1="445" x2="765" y2="445" stroke="#73726C" stroke-width="0.8"/>
+  <line x1="765" y1="445" x2="765" y2="456" stroke="#73726C" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <rect x="700" y="458" width="130" height="28" rx="6" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+  <text x="765" y="477" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#085041" text-anchor="middle">alarm-panel</text>
+
+  <!-- ============ QUALITY OF LIFE LAYER ============ -->
+
+  <!-- music-player -->
+  <rect x="68" y="510" width="250" height="60" rx="8" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="193" y="536" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#444441" text-anchor="middle">music-player</text>
+  <text x="193" y="554" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#5F5E5A" text-anchor="middle">Shuffle music player with Bluetooth auto-play</text>
+
+  <!-- ============ LEGEND ============ -->
+  <text x="468" y="600" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#73726C" text-anchor="middle">
+    Each repo is forkable. Clone it, configure for your vessel, and build.
+  </text>
+</svg>

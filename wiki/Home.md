@@ -12,6 +12,10 @@ Page index for the guide. Each page maps to one step of the AI workflow that a n
 owner's AI session follows. Pages marked **STUB** have scope and acceptance criteria
 but not yet the full content.
 
+## System overview
+
+![System overview](architecture-overview.svg)
+
 ## Pages (reading order = build order)
 
 | # | Page | Workflow Step | Status |
