@@ -15,7 +15,7 @@ that a new owner hands to their AI assistant (Claude, ChatGPT, or equivalent) an
 
 ## What this is
 
-Seven open-source repositories document a complete ship's automation system built aboard
+Eight open-source repositories document a complete ship's automation system built aboard
 SV Unladen Swallow 2 (Hylas 51). That system includes:
 
 - **Monitoring and rules engine** — SignalK hub, data-driven alarm/automation rules,
@@ -27,6 +27,7 @@ SV Unladen Swallow 2 (Hylas 51). That system includes:
 - **Alarm panel** — custom PCB with LED indicators, backlit labels, mute/test (alarm-panel)
 - **Physical wiring** — Modbus I/O, relay pool, DIN rail, commissioning (wiring-io)
 - **Entertainment** — shuffle music player with Bluetooth auto-play (music-player)
+- **Manuals RAG** — local AI search over manufacturer PDF manuals (manuals-rag)
 
 Those repos document **one boat's specific build**. This guide is the **adaptation layer**
 that helps you build YOUR version on YOUR boat.
@@ -73,3 +74,4 @@ evolve, and that's expected.
 | [alarm-panel](https://github.com/shipboard-sa/alarm-panel) | Alarm panel PCB (EasyEDA, JLCPCB) |
 | [wiring-io](https://github.com/shipboard-sa/wiring-io) | Physical wiring, commissioning, Modbus I/O |
 | [music-player](https://github.com/shipboard-sa/music-player) | Android shuffle player for boat stereo |
+| [manuals-rag](https://github.com/shipboard-sa/manuals-rag) | Local RAG search over manufacturer PDF manuals |
