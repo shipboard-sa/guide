@@ -2,7 +2,7 @@
 Purpose: Wiki index for the New Owner's Guide — page list, reading order, status.
 Version: v1 (2026-11-04)
 Scope: PUBLIC — wiki entry point.
-Architecture: Each page maps to one step of the 8-step AI workflow.
+Architecture: Each page maps to one step of the 9-step AI workflow.
 Invocation: n/a (reference doc)
 -->
 
@@ -28,6 +28,7 @@ but not yet the full content.
 | 5 | [Before You Build](05-Before-You-Build.md) | Build plan — marine electrical | **DRAFT** |
 | 6 | [Rules Authoring Tutorial](06-Rules-Authoring-Tutorial.md) | Rules customization | **DRAFT** |
 | 7 | [Commissioning Guide](07-Commissioning-Guide.md) | Commission and test | **DRAFT** |
+| 8 | [Configuration Tools](08-Configuration-Tools.md) | Browser editors + audit viewer | v1 |
 | — | [Glossary and Concepts](Glossary.md) | Reference — terminology and key concepts | **DRAFT** |
 | — | [Generic vs Lee-Specific](Generic-vs-Lee-Specific.md) | Cross-cutting | **DRAFT** |
 

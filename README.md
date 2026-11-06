@@ -45,6 +45,8 @@ that helps you build YOUR version on YOUR boat.
 7. **Follow the [Rules Tutorial](wiki/06-Rules-Authoring-Tutorial.md)** — write automation
    rules for your setup.
 8. **Commission with the [Test Guide](wiki/07-Commissioning-Guide.md)** — verify it works.
+9. **Use the [Configuration Tools](wiki/08-Configuration-Tools.md)** — browser editors for
+   rules, signals, I/O, and decision audit.
 
 The [Generic vs Lee-Specific](wiki/Generic-vs-Lee-Specific.md) guide explains which parts
 of the reference repos are transferable patterns vs. one boat's configuration.
